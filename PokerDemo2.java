@@ -1,4 +1,4 @@
-package PokerGameDemo2;
+﻿package PokerGameDemo2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -76,3 +76,4 @@ public class PokerDemo2 {
 		System.out.println();
 	}
 }
+//我怎么push不上去
