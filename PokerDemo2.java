@@ -76,4 +76,4 @@ public class PokerDemo2 {
 		System.out.println();
 	}
 }
-//我怎么push不上去
+
