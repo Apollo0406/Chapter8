@@ -24,3 +24,14 @@ public class ClientSocketDemo {
         }
     }
 }
+
+/**
+ *简单Socket通信
+ * 接着客户端：（在服务器开始监听端口可以建立连接之后）
+ * 1.创建客户端Socket: Socket client = new Socket("xx.xx.xx.x",2020);
+ * 2.创建输入流准备接收服务器端发来的数据
+ *  2.1先得到输入流 ：client.getInputStream
+ *  2.2创建数据输入流： DataInputStream dis = new DataInputStream(client.getInputStream);
+ * 3.读取数据并打印在控制台：dis.readUTF();
+ * 4.关闭连接：client.close()
+ */

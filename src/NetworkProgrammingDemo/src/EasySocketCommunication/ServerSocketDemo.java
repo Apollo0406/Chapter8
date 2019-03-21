@@ -27,3 +27,16 @@ public class ServerSocketDemo {
         }
     }
 }
+
+/**
+ * 简单Socket通信
+ * 首先服务器端：
+ * 1.指定要监听的端口： ServerSocket server = new ServerSocket(2020);
+ * 2.通过ServerSocket.accept侦听并创建Socket: Socket sk = server.accept();
+ * 3.建立连接之后，准备往客户端发送数据。则要建立输出流
+ *  3.1得到输出流： server.getOutputStream
+ *  3.2创建数据输出流： DataOutputStream dos = new DataOutputStream(server.getOutputStream());
+ * 4.向客户端发送数据：dos.writeUTF("要发送的内容");
+ * 5.关闭流：dos.close()
+ * 6.关闭连接：server.close()
+ */
